@@ -168,7 +168,7 @@
   </div>
 
   <div id="chatpage">
-    <label style="font-weight: bolder; padding-left: 45%;"> Dietpro </label>
+    <label style="font-weight: bolder; padding-left: 45%;"> DietPRO Bot </label>
     <div id="chat"></div>
     <input type="text" id="input" placeholder="Type a message...">
     <button id="button">Send</button>
@@ -218,7 +218,7 @@
           success: function (reply) {
             console.log(reply);
             $('#loader').remove();
-            chat.append('<div><strong>DietPRO Bot:</strong> ' + reply.body + '</div>');
+            chat.append('<div><strong>DietPRO:</strong> ' + reply.body + '</div>');
             chat.scrollTop(chat.prop('scrollHeight'));
             chatHistory.push({
               speaker: 'assistant',
